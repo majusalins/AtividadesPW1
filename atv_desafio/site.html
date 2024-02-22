@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Desafio: Receita de Omelete</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-color: hsl(30, 54%, 90%);
+        }
+
+        #corpo {
+            background-color: hsl(0, 0%, 100%);
+            border-radius: 20px;
+            margin: 10% 20%;
+            padding: 4%;
+        }
+
+        #imagem {
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: hsl(24, 5%, 18%);
+            font-family: "Young Serif", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 32px;
+        }
+
+        h2 {
+            color: hsl(14, 45%, 36%);
+            font-family: "Young Serif", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 24px;
+        }
+
+        h3 {
+            color: hsl(332, 51%, 32%);
+            padding-left: 5%;
+        }
+
+        li {
+            color: hsl(24, 5%, 25%);
+            font-size: 16px;
+            text-align: justify;
+            font-family: "Outfit";
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: li;
+        }
+
+        #num::before {
+            font-weight: bold;
+            content: counter(li)".";
+            color: hsl(14, 45%, 36%);
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        #num {
+            counter-increment: li
+        }
+
+        b {
+            color: hsl(30, 10%, 34%);
+        }
+
+        p {
+            font-size: 16px;
+            text-align: justify;
+            font-family: "Outfit";
+            font-weight: 400;
+            font-style: normal;
+            color: hsl(24, 5%, 25%);
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 15px 0px 15px 50px;
+        }
+
+        hr {
+            border: 1px solid #ddd;
+            margin: 35px 0px;
+        }
+
+        #prep {
+            font-size: 12px;
+            border-radius: 20px;
+            padding: 2% 2%;
+            line-height: 25px;
+            background-color: hsl(330, 100%, 98%);
+            font-family: "Outfit";
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        #ingr {
+            line-height: 30px;
+        }
+
+        #inst {
+            line-height: 25px;
+        }
+
+        .tabela,
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+            font-family: "Outfit";
+            font-weight: 400;
+            font-style: normal;
+            color: hsl(24, 5%, 25%);
+        }
+
+        #tabletext {
+            color: hsl(14, 45%, 36%);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="corpo">
+        <img id="imagem" src="image-omelette.jpeg" height="100%" width="100%">
+
+        <h1>Receita Simples de Omelete</h1>
+
+        <p>Um prato fácil e rápido, perfeito para qualquer refeição. Esta omelete clássica combina ovos batidos cozidos
+            com perfeição, opcionalmente recheado com queijo, vegetais ou carnes de sua escolha.</p>
+
+        <section id="prep">
+            <h3>Tempo de preparação</h3>
+            <ul>
+                <li><b>Total:</b> Aproximadamente 10 minutos</li>
+                <li><b>Preparação:</b> 5 minutos</li>
+                <li><b>Cozinhando:</b> 5 minutos</li>
+            </ul>
+        </section>
+
+        <section id="ingr">
+            <h2>Ingredientes</h2>
+
+            <ul>
+                <li>2-3 ovos grandes</li>
+                <li>Sal, a gosto</li>
+                <li>Pimenta a gosto</li>
+                <li>1 colher de sopa de manteiga ou óleo</li>
+                <li>Recheios opcionais: queijo, legumes em cubos, carnes cozidas, ervas</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="inst">
+            <h2>Instruções</h2>
+            <ol>
+                <li id="num"><b>Bata os ovos:</b> Numa tigela, bata os ovos com uma pitada de sal e pimenta até ficarem
+                    bem misturados. Você pode adicionar uma colher de sopa de água ou leite para obter uma textura mais
+                    fofa.</li>
+
+                <li id="num"><b>Aqueça a panela:</b> Coloque uma frigideira antiaderente em fogo médio e adicione
+                    manteiga ou óleo.
+                </li>
+
+                <li id="num"><b>Cozinhe a omelete:</b> Assim que a manteiga derreter e borbulhar, coloque os ovos.
+                    Incline a panela para garantir os ovos cobrem uniformemente a superfície.</li>
+
+                <li id="num"><b>Adicione recheios (opcional):</b> Quando os ovos começarem a endurecer nas bordas, mas
+                    ainda estiverem um pouco escorrendo no meio, polvilhe os recheios escolhidos sobre metade da
+                    omelete.</li>
+
+                <li id="num"><b>Dobre e sirva:</b> Enquanto a omelete continua cozinhando, levante cuidadosamente uma
+                    das pontas e dobre-a sobre o recheios. Deixe cozinhar por mais um minuto e depois coloque-o em um
+                    prato.</li>
+
+                <li id="num"><b>Aproveite:</b> Sirva quente, com mais sal e pimenta se necessário.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section id="nutr">
+            <h2>Nutrição</h2>
+
+            <p>A tabela abaixo mostra os valores nutricionais por porção sem recheios adicionais.</p>
+
+            <table id="tabela">
+                <tr>
+                    <td>Calorias</td>
+                    <th id="tabletext">277kcal</th>
+                </tr>
+
+                <tr>
+                    <td>Carboidratos</td>
+                    <th id="tabletext">0g</th>
+                </tr>
+
+                <tr>
+                    <td>Proteína</td>
+                    <th id="tabletext">20g</th>
+                </tr>
+
+                <tr>
+                    <td>Gordura</td>
+                    <th id="tabletext">22g</th>
+                </tr>
+
+            </table>
+        </section>
+
+    </section>
+
+</body>
+
+</html>
