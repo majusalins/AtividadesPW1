@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Projeto</title>
+
+    <style>
+      * {
+        transition: all 0.3s;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      body {
+        background-color: hsl(225, 100%, 94%);
+        background-image: url(pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #corpo {
+        background-color: white;
+        border-radius: 20px;
+        height: 700px;
+        width: 450px;
+        margin: 10% 10%;
+      }
+
+      #corpo2 {
+        padding: 4%;
+        margin: 10px 10px 10px 10px;
+      }
+
+      h1 {
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 900;
+        color: hsl(223, 47%, 23%);
+        text-align: center;
+        font-size: 25px;
+        margin: 15px;
+      }
+
+      #p1 {
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: hsl(224, 23%, 55%);
+        text-align: center;
+        margin: 15px;
+      }
+
+      #plano {
+        background-color: hsl(225, 100%, 98%);
+        border-radius: 15px;
+        max-width: 350px;
+        max-height: 100px;
+        margin: 6%;
+        padding: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      #textofoto-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+      }
+
+      #icone {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #texto-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 8px;
+      }
+
+      #anual {
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 900;
+        color: hsl(223, 47%, 23%);
+        font-size: 16px;
+      }
+
+      #p2 {
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 500;
+        color: hsl(224, 23%, 55%);
+      }
+
+      #mudar {
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 700;
+        color: hsl(245, 75%, 52%);
+        cursor: pointer;
+        &:hover {
+          filter: brightness(1.5);
+        }
+      }
+
+      #button {
+        background-color: hsl(245, 75%, 52%);
+        border-radius: 15px;
+        width: 350px;
+        height: 50px;
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 700;
+        text-align: center;
+        color: white;
+        margin-top: 20px;
+        margin-left: 20px;
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+
+        &:hover {
+          filter: brightness(1.5);
+        }
+      }
+
+      #cancelar {
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 700;
+        color: hsl(224, 23%, 55%);
+        font-size: 16px;
+        text-align: center;
+        margin-top: 20px;
+        cursor: pointer;
+        &:hover {
+          filter: brightness(0.3);
+        }
+      }
+
+      #ilust {
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section id="corpo">
+      <img id="ilust" src="illustration-hero.svg" />
+      <section id="corpo2">
+        <h1>Resumo do Pedido</h1>
+
+        <p id="p1">
+          Agora você pode ouvir milhões de músicas, audiolivros e podcasts em
+          qualquer dispositivo em qualquer lugar que você quiser!
+        </p>
+
+        <section id="plano">
+          <section id="textofoto-wrapper">
+            <section id="icone">
+              <img id="icon" src="icon-music.svg" />
+            </section>
+
+            <section id="texto-wrapper">
+              <span id="anual">Plano anual</span>
+              <span id="p2">US$ 59,99/ano</span>
+            </section>
+          </section>
+
+          <section id="botao-wrapper">
+            <p id="mudar"><u>Mudar</u></p>
+          </section>
+        </section>
+
+        <section id="botao">
+          <button id="button">Prossiga para o pagamento</button>
+          <p id="cancelar">Cancelar pedido</p>
+        </section>
+      </section>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Maju</a>.
+    </div>
+  </body>
+</html>
