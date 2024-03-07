@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet" />
+  <title>Seção social</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      background-image: url(bg-pattern-top-desktop.svg),
+        url(bg-pattern-bottom-desktop.svg), white;
+      background-repeat: no-repeat, no-repeat;
+      background-position: top left, bottom right, center;
+      background-size: 40%, 70%, cover;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .body-content {
+      width: 80%;
+      margin-top: 5%;
+      margin-left: 6%;
+    }
+
+    .site-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .site-header-text {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+    }
+
+    .big-text {
+      font-family: "League Spartan", sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      color: hsl(300, 43%, 22%);
+      line-height: 1em;
+    }
+
+    .small-text {
+      font-family: "League Spartan", sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      color: hsl(300, 13%, 45%);
+    }
+
+    .reviews {
+      width: 450px;
+      margin-left: 10%;
+    }
+
+    .review {
+      background-color: hsl(300, 24%, 96%);
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      padding: 3% 5%;
+      margin-bottom: 4%;
+      border-radius: 5px;
+
+    }
+
+    .review-text {
+      font-family: "League Spartan", sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: hsl(300, 43%, 22%);
+      margin: auto;
+    }
+
+    #rev1 {
+      position: relative;
+      left: -10%;
+    }
+
+    #rev2 {
+      position: relative;
+      left: 0%;
+    }
+
+    #rev3 {
+      position: relative;
+      left: 10%;
+    }
+
+    .feedbacks {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .client-feedback {
+      background-color: hsl(300, 43%, 22%);
+      width: 40%;
+      margin-top: 5%;
+      margin-right: 4%;
+      padding: 3%;
+      border-radius: 5%;
+    }
+
+    .feedback-header {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .client-feedback img {
+      height: 45px;
+      width: 45px;
+      border-radius: 100%;
+    }
+
+    .feedback-header .feedback-header-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .client-name {
+      font-family: "League Spartan", sans-serif;
+      font-weight: 500;
+      color: white;
+      margin: 0px 0px 0px 15px;
+    }
+
+    .verified-buyer {
+      font-family: "League Spartan", sans-serif;
+      font-weight: 400;
+      color: hsl(333, 80%, 67%);
+      font-size: 14px;
+      margin: 0px 0px 0px 15px;
+    }
+
+    .feedback-text {
+      font-family: "League Spartan", sans-serif;
+      font-weight: 400;
+      color: white;
+      font-size: 15px;
+    }
+
+    #feedback1 {
+      position: relative;
+      top: -10%;
+    }
+
+    #feedback2 {
+      position: relative;
+      top: 0%;
+    }
+
+    #feedback3 {
+      position: relative;
+      top: 10%;
+    }
+
+    .site-bottom {
+      height: 350px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="body-content">
+    <div class="site-header">
+      <div class="site-header-text">
+        <span class="big-text">
+          Mais de 10.000 de nossos usuários adoram nossos produtos.</span>
+        <span class="small-text">
+          <br>Fornecemos apenas ótimos produtos combinados com excelente atendimento
+          ao cliente. Veja o que nossos clientes satisfeitos estão dizendo sobre
+          nossos serviços.</span>
+      </div>
+
+      <div class="reviews">
+        <div class="review" id="rev1">
+          <span class="review-text">&#11088; &#11088; &#11088; &#11088; &#11088; Classificado com 5 estrelas nas
+            avaliações</span>
+        </div>
+
+        <div class="review" id="rev2">
+          <span class="review-text">&#11088; &#11088; &#11088; &#11088; &#11088; Avaliado com 5 estrelas no Report
+            Guru</span>
+        </div>
+
+        <div class="review" id="rev3">
+          <span class="review-text">&#11088; &#11088; &#11088; &#11088; &#11088; Avaliado com 5 estrelas na
+            BestTech</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-bottom">
+      <div class="feedbacks">
+        <div class="client-feedback" id="feedback1">
+          <div class="feedback-header">
+            <img src="image-colton.jpg">
+            <div class="feedback-header-text">
+              <span class="client-name">Colton Smith</span>
+              <span class="verified-buyer">Comprador verificado</span>
+            </div>
+          </div>
+          <span class="feedback-text">"Precisávamos do mesmo design impresso
+            que encomendamos uma semana antes. Eles não apenas encontraram o pedido
+            original, mas também o recebemos a tempo. Excelente!"</span>
+        </div>
+
+        <div class="client-feedback" id="feedback2">
+          <div class="feedback-header">
+            <img src="image-irene.jpg">
+            <div class="feedback-header-text">
+              <span class="client-name">Irene Roberto</span>
+              <span class="verified-buyer">Comprador verificado </span>
+            </div>
+          </div>
+          <span class="feedback-text"> "O atendimento ao cliente é sempre
+            excelente e o retorno muito rápido. Completamente encantada com a
+            simplicidade da compra e a rapidez na entrega."</span>
+        </div>
+
+        <div class="client-feedback" id="feedback3">
+          <div class="feedback-header">
+            <img src="image-anne.jpg">
+            <div class="feedback-header-text">
+              <span class="client-name">Wallace</span>
+              <span class="verified-buyer">Comprador verificado</span>
+            </div>
+          </div>
+          <span class="feedback-text">“Faça um pedido com esta empresa e só posso
+            elogiá-la pelo altíssimo padrão. Com certeza irei utilizá-los novamente e
+            recomendá-los a todos!"</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
