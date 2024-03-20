@@ -137,7 +137,7 @@ section div {
 
 .section-text {
     margin-left: 7%;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 section div h3 {
@@ -280,7 +280,6 @@ footer {
 }
 
 .footer-socials ul li img {
-    fill: hsl(210, 27%, 84%);
     border: solid 2px hsl(210, 27%, 84%);
     border-radius: 50%;
     padding: 5px;
@@ -288,9 +287,12 @@ footer {
     height: 20px;
 
     &:hover {
-        fill: hsl(322, 100%, 66%);
-        border: solid 2px hsl(322, 100%, 66%);
+        cursor: pointer;
+        transition: none;
+        filter:
+            brightness(0) saturate(100%) invert(51%) sepia(22%) saturate(4982%) hue-rotate(294deg) brightness(101%) contrast(101%)
     }
+
 }
 
 .copyright {
