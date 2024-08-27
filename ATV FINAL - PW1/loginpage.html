@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>INSTITUTO MAJU</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#FFFBE1] w-full h-screen flex flex-col items-center font-[inter]">
+    <header class="w-full">
+        <nav class="bg-[#BA2339] w-full h-[82px] flex flex-row font-bold text-[#E8B666]">
+            <div class="flex flex-col p-[8px] ml-4 text-white text-[22px]">
+                <span>INSTITUTO MAJU</span>
+                <span>Aulas de idiomas</span>
+            </div>
+            <div class="flex flex-row justify-between p-8 gap-20">
+                <span class="hover:underline cursor-pointer">Encontrar professores</span>
+                <span class="hover:underline cursor-pointer">Torne-se um professor</span>
+                <span class="hover:underline cursor-pointer">Inglês online</span>
+                <span class="hover:underline cursor-pointer">Espanhol online</span>
+            </div>
+            <button
+                class="bg-[#680A1D] w-[150px] h-[45px] mt-5 ml-24 rounded-[10px] hover:bg-[#741126] cursor-pointer">Login</button>
+        </nav>
+    </header>
+
+    <div class="flex flex-col text-[#E8B666] mt-20">
+        <div class="flex flex-col">
+            <h1 class="text-[24px] font-bold">Entrar</h1>
+            <span class="mt-4 text-[16px] cursor-pointer"><u>Cadastre-se como professor</u> ou</span>
+            <span class="text-[16px] cursor-pointer"><u>Cadastre-se como aluno</u></span>
+        </div>
+
+        <div class="flex flex-col p-8 gap-5">
+            <button class="flex flex-row items-center justify-center w-[450px] h-[60px] border-[2px] border-[#E8B666] text-[22px] p-3 gap-5 rounded-lg"><img
+                    class="h-[41px] w-[41px]" src="googleicon.png">Continuar com Google</button>
+            <button class="flex flex-row items-center justify-center w-[450px] h-[60px] border-[2px] border-[#E8B666] text-[22px] p-4 gap-5 rounded-lg"><img
+                    class="h-[35px] w-[35px]" src="fbicon.png">Continuar
+                com Facebook</button>
+        </div>
+
+        <hr class="bg-[#E8B666] h-px border-0 w-[430px] place-self-center">
+
+        <div class="flex flex-col">
+            <form class="flex flex-col p-8">
+                <label for="email" class="text-[#E8B666] text-[20px] mb-2">E-mail</label>
+                <input type="text" name="email" value="" placeholder="Seu E-mail"
+                    class="text-[#E8B666] placeholder:text-[#E8B666] placeholder:text-[18px] placeholder:opacity-50 p-4 rounded-lg bg-[#FFFBE1] border-[2px] border-[#E8B666] border-opacity-50">
+                <label for="senha" class="text-[#E8B666] text-[20px] mt-5 mb-2">Senha</label>
+                <input type="text" name="senha" value="" placeholder="Sua senha"
+                    class="text-[#E8B666] placeholder:text-[#E8B666] placeholder:text-[18px] placeholder:opacity-50 p-4 rounded-lg bg-[#FFFBE1] border-[2px] border-[#E8B666] border-opacity-50">
+            </form>
+        </div>
+        <button class="font-bold text-[18px] h-[50px] place-self-center w-[200px] mb-10 bg-[#BA2339] rounded-[10px] hover:bg-[#741126] cursor-pointer">Entrar</button>
+
+    </div>
+
+    <footer class="bg-[#BA2339] text-white w-full p-8 flex flex-col gap-10">
+        <div class="flex flex-row gap-20">
+            <div class="flex flex-col">
+                <h3 class="font-bold text-[20px]">Sobre nós</h3>
+                <span class="text-[16px] cursor-pointer"><u>Quem somos</u></span>
+                <span class="text-[16px] cursor-pointer"><u>Como funciona</u></span>
+                <span class="text-[16px] cursor-pointer"><u>Avaliações</u></span>
+            </div>
+            <div class="flex flex-col">
+                <h3 class="font-bold text-[20px]">Contato</h3>
+                <span><u>(00) 1234-5678</u></span>
+            </div>
+        </div>
+        <span class="self-end float-right text-[10px]">© Maria Julia Lins. All rights reserved</span>
+    </footer>
+</body>
+
+</html>
